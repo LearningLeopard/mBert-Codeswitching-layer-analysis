@@ -1,0 +1,67 @@
+{
+  "builder_name": "lince",
+  "citation": "\n@inproceedings{alghamdi-etal-2016-part,\n   title = \"Part of Speech Tagging for Code Switched Data\",\n   author = \"AlGhamdi, Fahad and\n             Molina, Giovanni and\n             Diab, Mona and\n             Solorio, Thamar and\n             Hawwari, Abdelati and\n             Soto, Victor and\n             Hirschberg, Julia\",\n   booktitle = \"Proceedings of the Second Workshop on Computational Approaches to Code Switching\",\n   month = nov,\n   year = \"2016\",\n   address = \"Austin, Texas\",\n   publisher = \"Association for Computational Linguistics\",\n   url = \"https://www.aclweb.org/anthology/W16-5812\",\n   doi = \"10.18653/v1/W16-5812\",\n   pages = \"98--107\",\n}\n\n@inproceedings{aguilar-etal-2020-lince,\n    title = \"{L}in{CE}: A Centralized Benchmark for Linguistic Code-switching Evaluation\",\n    author = \"Aguilar, Gustavo  and\n      Kar, Sudipta  and\n      Solorio, Thamar\",\n    booktitle = \"Proceedings of The 12th Language Resources and Evaluation Conference\",\n    month = may,\n    year = \"2020\",\n    address = \"Marseille, France\",\n    publisher = \"European Language Resources Association\",\n    url = \"https://www.aclweb.org/anthology/2020.lrec-1.223\",\n    pages = \"1803--1813\",\n    language = \"English\",\n    ISBN = \"979-10-95546-34-4\",\n}\n\nNote that each LinCE dataset has its own citation. Please see the source to see\nthe correct citation for each contained dataset.",
+  "config_name": "pos_spaeng",
+  "dataset_size": 8066907,
+  "description": "LinCE is a centralized Linguistic Code-switching Evaluation benchmark\n(https://ritual.uh.edu/lince/) that contains data for training and evaluating\nNLP systems on code-switching tasks.\n",
+  "download_checksums": {
+    "https://ritual.uh.edu/lince/libaccess/eyJ1c2VybmFtZSI6ICJodWdnaW5nZmFjZSBubHAiLCAidXNlcl9pZCI6IDExMSwgImVtYWlsIjogImR1bW15QGVtYWlsLmNvbSJ9/pos_spaeng.zip": {
+      "num_bytes": 819657,
+      "checksum": null
+    }
+  },
+  "download_size": 819657,
+  "features": {
+    "words": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lid": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "Comparison": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "http://ritual.uh.edu/lince",
+  "license": "",
+  "size_in_bytes": 8886564,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 5467760,
+      "num_examples": 27893,
+      "dataset_name": "lince"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 840569,
+      "num_examples": 4298,
+      "dataset_name": "lince"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 1758578,
+      "num_examples": 10720,
+      "dataset_name": "lince"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "description": "The Linguistic Code-switching Evaluation (LinCE) benchmark",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
